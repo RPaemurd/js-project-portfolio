@@ -1,8 +1,20 @@
-export const App = () => {
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+`;
+
+function App() {
   return (
-    <>
-      <h1>Portfolio</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum! Maxime animi nostrum facilis distinctio neque labore consectetur beatae eum ipsum excepturi voluptatum, dicta repellendus incidunt fugiat, consequatur rem aperiam.</p>
-    </>
+    <Container>
+      <h1>Nu kör vi!</h1>
+    </Container>
   )
 }
+
+export default App;
