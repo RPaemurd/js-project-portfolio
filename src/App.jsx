@@ -1,19 +1,29 @@
 import styled from "styled-components";
+import Header from "./components/header";
+import GlobalStyles from "./GlobalStyles";
 
-const Container = styled.div`
+
+
+const OuterWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-  font-family: sans-serif;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 31.651px;
 `;
 
 function App() {
   return (
-    <Container>
-      <h1>Nu kör vi!</h1>
-    </Container>
+    <>
+      <GlobalStyles />
+      <OuterWrapper>
+        <Header />
+          {/* <main></main>
+          <Footer /> */}
+      </OuterWrapper>
+    </>
   )
 }
 
