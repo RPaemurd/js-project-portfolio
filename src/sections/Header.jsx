@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import profileImg from '../assets/profilepic.svg';
+import SocialLinks from "../components/SocialLinks";
 
 const HeaderWrapper = styled.header`
     display: flex;
@@ -45,7 +46,7 @@ function Header() {
                 <h2>Frontend Developer</h2>
                 <p>I'm a developer-in-training (diving deep into React and Node.js!) who believes great code is only half the story. The other half? Great communication!
                     My background isn't just in tech; I spent years in the service industry, which means I really get teamwork, building relationships, and figuring out what people actually want. I'm passionate about building dynamic apps that don't just work, but feel amazing to use (I'm a total advocate for good UX).</p>
-                {/* ikoner */}
+                <SocialLinks />
             </HeaderText>
             <ProfileImage src={profileImg} alt="Rebecca Profile Picture" />
         </HeaderWrapper>

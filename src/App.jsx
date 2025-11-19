@@ -3,8 +3,6 @@ import Header from "./sections/Header";
 import GlobalStyles from "./GlobalStyles";
 import Footer from "./sections/Footer";
 
-
-
 const OuterWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,8 +21,8 @@ function App() {
         <Header />
           {/* <main></main>
           <Footer /> */}
-        <Footer />
       </OuterWrapper>
+      <Footer />
     </>
   )
 }
