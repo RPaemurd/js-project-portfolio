@@ -3,7 +3,7 @@ import profileImg from '../assets/profilepic.svg';
 
 const HeaderWrapper = styled.header`
     display: flex;
-    padding: 35px 20px;
+    padding: 30px 15px;
     flex-direction: column;
     align-items: center;
     gap: 24px;

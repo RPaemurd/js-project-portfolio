@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./sections/Header";
 import GlobalStyles from "./GlobalStyles";
+import Footer from "./sections/Footer";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Header />
           {/* <main></main>
           <Footer /> */}
+        <Footer />
       </OuterWrapper>
     </>
   )
