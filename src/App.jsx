@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Header from "./components/header";
+import Header from "./sections/Header";
 import GlobalStyles from "./GlobalStyles";
 
 
