@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "./sections/Header";
 import GlobalStyles from "./GlobalStyles";
 import Footer from "./sections/Footer";
+import FeaturedProjects from "./sections/FeaturedProjects";
 
 const OuterWrapper = styled.div`
   display: flex;
@@ -19,8 +20,7 @@ function App() {
       <GlobalStyles />
       <OuterWrapper>
         <Header />
-          {/* <main></main>
-          <Footer /> */}
+          <FeaturedProjects />
       </OuterWrapper>
       <Footer />
     </>
