@@ -16,6 +16,7 @@ const FooterText = styled.article`
 
     align-self: flex-start;
     text-align: left;
+    margin-bottom: 2rem;
 
     h2 {
         font-weight: bold;
