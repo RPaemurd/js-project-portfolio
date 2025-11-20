@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import profileImg from '../assets/profilepic.svg';
+import profileImg from '../assets/images/profilepic.svg';
 import SocialLinks from "../components/SocialLinks";
 
 const HeaderWrapper = styled.header`
@@ -52,8 +52,5 @@ function Header() {
         </HeaderWrapper>
     )
 }
-
-
-
 
 export default Header;
