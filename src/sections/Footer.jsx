@@ -8,7 +8,7 @@ const FooterWrapper = styled.section`
     padding: 5px 15px;
     
     align-items: center;
-    gap: 24px;
+    gap: 4px;
     align-self: stretch; 
 `;
 
@@ -45,8 +45,8 @@ function Footer() {
                 <p>Rebecca Sighed Paemurd</p>
                 <p>+46(0)709 36 88 36</p>
                 <p>rebecca.paemurd@gmail.com</p>
-                <SocialLinks />
             </FooterText>
+            <SocialLinks />
         </FooterWrapper>
     )
 

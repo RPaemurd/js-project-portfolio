@@ -5,16 +5,15 @@ const CardWrapper = styled.article`
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 350px;
-/*     border: 2px solid #FD6F00;
- */    margin-bottom: 0.5rem;
+    height: 390px;
+    margin-bottom: 1rem;
 
     img {
         height: 200px
     };
 
     h3 {
-        margin: 6px;
+        margin-top: 0.4rem;
     };
 `;
 
@@ -27,7 +26,7 @@ function ProjectCard({ img, title, desc}) {
         <CardWrapper>
             <img src={img} alt="Project Picture" />
             <h3>{title}</h3>
-            {/* <p>{desc}</p> */}
+            <p>{desc}</p>
 
             <ButtonWrapper>
                 <Button primary text="Live Demo" />

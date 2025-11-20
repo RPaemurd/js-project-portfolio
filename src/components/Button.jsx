@@ -1,11 +1,11 @@
-import styled from "styled-components"
 
+import styled from "styled-components"
 
 const StyledButton = styled.button`
     
     width: 300px;
-    height: 38px;
-    font-weight: 500;
+    height: 40px;
+    font-weight: 600;
     border-radius: 10px;
     margin-top: 0.4rem;
     letter-spacing: 1px;

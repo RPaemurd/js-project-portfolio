@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     color: #0d0d0dff;
     font-family: "Inter", sans-serif;
   }
+
+  button, input, textarea, select {
+    font-family: inherit; 
+  }
 `;
 
 export default GlobalStyles;
