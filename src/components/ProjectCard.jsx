@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Button from "./Button";
 
 const CardWrapper = styled.article`
     display: flex;
@@ -12,10 +13,12 @@ const CardWrapper = styled.article`
         height: 200px
     };
 
-    h2 {
+    h3 {
         margin: 6px;
     };
+`;
 
+const ButtonWrapper = styled.section`
 
 `;
 
@@ -23,8 +26,13 @@ function ProjectCard({ img, title, desc}) {
     return (
         <CardWrapper>
             <img src={img} alt="Project Picture" />
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             {/* <p>{desc}</p> */}
+
+            <ButtonWrapper>
+                <Button primary text="Live Demo" />
+                <Button text="View Code" />
+            </ButtonWrapper>
         </CardWrapper>
     )
 };
