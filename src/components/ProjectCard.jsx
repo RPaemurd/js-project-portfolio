@@ -37,7 +37,7 @@ const ImageWrapper = styled.div`
     img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+  /*   object-fit: cover;  */
     display: block;    
   };
 `;
@@ -56,8 +56,8 @@ function ProjectCard({ img, title, desc}) { //props
             <p>{desc}</p>
 
             <ButtonWrapper> 
-                <Button primary text="Live Demo" /> {/* manually assigning the props primary and text */}
-                <Button text="View Code" />
+                <Button text="Live Demo" /> {/* manually assigning the props primary and text */}
+                <Button primary text="View Code" />
             </ButtonWrapper>
         </CardWrapper>
     )
