@@ -8,10 +8,6 @@ const CardWrapper = styled.article`
     min-height: 380px;
     margin-bottom: 1rem;
 
-    img {
-        height: 200px
-    };
-
     h3 {
         margin: 0.4rem 0;
     };
@@ -21,13 +17,41 @@ const CardWrapper = styled.article`
     };
 `;
 
+const ImageWrapper = styled.div`
+
+    position: relative;
+    height: 200px;
+    width: 100%;
+
+    &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fd6e0023;
+    mix-blend-mode: multiply;
+};
+
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Gör att bilden inte ser utdragen ut */
+    display: block;    /* Tar bort en liten irriterande glipa i botten */
+  };
+`;
+
 const ButtonWrapper = styled.section`
 `;
 
 function ProjectCard({ img, title, desc}) { //props
     return (
         <CardWrapper>
-            <img src={img} alt="Project Picture" />
+            <ImageWrapper>
+                <img src={img} alt="Project Picture" />
+            </ImageWrapper>
+
             <h3>{title}</h3>
             <p>{desc}</p>
 
