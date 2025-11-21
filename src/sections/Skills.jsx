@@ -15,7 +15,7 @@ const SkillsWrapper = styled.section`
     };
 `;
 
-const SkillsGrid = styled.div`
+const SkillsGrid = styled.section`
     display: flex;
     flex-wrap: wrap;     
     justify-content: center; 

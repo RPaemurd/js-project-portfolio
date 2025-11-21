@@ -17,6 +17,6 @@ export const skillList = [
 
     {
         category: "More",
-        items: ["Agile", "Concept Developmen"]
+        items: ["Agile", "Concept Development"]
     }
 ];

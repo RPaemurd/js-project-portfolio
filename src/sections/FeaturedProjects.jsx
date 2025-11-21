@@ -30,6 +30,8 @@ function FeaturedProjects() {
                 img={item.img}
                 title={item.title}
                 desc={item.desc}
+                netlifyUrl={item.netlifyUrl}
+                githubUrl={item.githubUrl}
             />
         ))}
         </FeaturedWrapper>

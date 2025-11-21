@@ -12,7 +12,9 @@ export const projects = [
         img: Findmytrail,
         title: "Find My Trail",
         desc: "Built with...",
-        tags: ["HTML", "CSS", "Javascript"]
+        tags: ["HTML", "CSS", "Javascript"],
+        netlifyUrl: "https://js-project-business.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/js-project-business-site" 
     },
 
     {
@@ -20,7 +22,9 @@ export const projects = [
         img: WeatherApp,
         title: "Weather API",
         desc: "Web app built with...",
-        tags: ["HTML", "CSS", "Typescript"]
+        tags: ["HTML", "CSS", "Typescript"],
+        netlifyUrl: "https://weather-app-tscript.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/js-project-weather-app" 
     },
 
       {
@@ -28,7 +32,9 @@ export const projects = [
         img: NftProductCard,
         title: "NFT Product Card",
         desc: "Web app built with...",
-        tags: ["HTML", "CSS"]
+        tags: ["HTML", "CSS"],
+        netlifyUrl: "https://npf-product-card.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/NFT-product-card" 
     },
 
       {
@@ -36,7 +42,9 @@ export const projects = [
         img: StatsCard,
         title: "Stats Card",
         desc: "Web app built with...",
-        tags: ["HTML", "CSS", "Typescript"]
+        tags: ["HTML", "CSS"],
+        netlifyUrl: "https://stats-preview-card-frm.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/Stats-Preview-Card" 
     },
 
       {
@@ -44,7 +52,9 @@ export const projects = [
         img: Solaris,
         title: "Solaris",
         desc: "Web app built with...",
-        tags: ["HTML", "CSS", "Javascript"]
+        tags: ["HTML", "CSS", "Javascript"],
+        netlifyUrl: "https://solarisproject-fu.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/Javascript---Solaris" 
     },
 
       {
@@ -52,7 +62,9 @@ export const projects = [
         img: Recipe,
         title: "Recipe Library",
         desc: "Built in Javacsript...",
-        tags: ["HTML", "CSS",]
+        tags: ["HTML", "CSS", "Javascrip"],
+        netlifyUrl: "https://recipe-assignment-technigo.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/js-project-recipe-library" 
     },
 
       {
@@ -60,6 +72,8 @@ export const projects = [
         img: ProductCard,
         title: "Product Preview Card",
         desc: "Built in Javacsript...",
-        tags: ["HTML", "CSS"]
+        tags: ["HTML", "CSS"],
+        netlifyUrl: "https://sage-kleicha-45ebdd.netlify.app/",
+        githubUrl: "https://github.com/RPaemurd/Product-Preview-Card-fm" 
     },
 ]

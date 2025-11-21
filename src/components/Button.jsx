@@ -17,9 +17,9 @@ const StyledButton = styled.button`
     border: 2px solid ${(props) => props.$primary ? "#FD6F00" : "#FFFFFF" };
 `;
 
-function Button({text, primary}) {
+function Button({text, primary, onClick}) {
     return (
-        <StyledButton $primary={primary}>{text}</StyledButton>
+        <StyledButton onClick={onClick} $primary={primary}>{text}</StyledButton>
     )
 };
 

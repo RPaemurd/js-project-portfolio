@@ -42,10 +42,10 @@ const ImageWrapper = styled.div`
   };
 `;
 
-const ButtonWrapper = styled.section`
-`;
+/* const ButtonWrapper = styled.div`
+`; */
 
-function ProjectCard({ img, title, desc}) { //props
+function ProjectCard({ img, title, desc, netlifyUrl, githubUrl}) { //props
     return (
         <CardWrapper>
             <ImageWrapper>
@@ -55,10 +55,10 @@ function ProjectCard({ img, title, desc}) { //props
             <h3>{title}</h3>
             <p>{desc}</p>
 
-            <ButtonWrapper> 
-                <Button text="Live Demo" /> {/* manually assigning the props primary and text */}
-                <Button primary text="View Code" />
-            </ButtonWrapper>
+            {/* <ButtonWrapper>  */}
+                <Button onClick={() => window.open(netlifyUrl, "_blank")} text="Live Demo" /> {/* manually assigning the props primary and text */}
+                <Button onClick={() => window.open(githubUrl, "_blank")} primary text="View Code" />
+            {/* </ButtonWrapper> */}
         </CardWrapper>
     )
 };
