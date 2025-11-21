@@ -12,9 +12,9 @@ const StyledButton = styled.button`
     font-size: 15px;
 
     /* if the button has props primary use */
-    background-color: ${(props) => props.$primary ? "#FFFFFF" : "#FD6F00" };
-    color: ${(props) => props.$primary ? "#FD6F00" : "#FFFFFF"};
-    border: 2px solid ${(props) => props.$primary ? "#FD6F00" : "#FFFFFF" };
+    background-color: ${(props) => props.$primary ? "#FFFFFF" : "#e66300ff" };
+    color: ${(props) => props.$primary ? "#e66300ff" : "#FFFFFF"};
+    border: 2px solid ${(props) => props.$primary ? "#e66300ff" : "#FFFFFF" };
 `;
 
 function Button({text, primary, onClick}) {

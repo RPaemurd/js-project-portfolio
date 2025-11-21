@@ -1,16 +1,23 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
+    :root {
+      --primary-color: #e66300ff";
+      --secondary-color: #FFF;
+      --bg-color: #f4f4f4;
+      --text-color: #333333;
+      --font-main: "Inter", sans-serif;
+    };
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
 
+
   body {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; 
-    color: #0d0d0dff;
-    font-family: "Inter", sans-serif;
   }
 
   button, input, textarea, select {
