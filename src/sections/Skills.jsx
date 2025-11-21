@@ -10,6 +10,8 @@ const SkillsWrapper = styled.section`
     h2 {
         font-size: 42px;
         letter-spacing: 1px;
+        margin: 0;
+        margin-bottom: 30px;
     };
 `;
 
@@ -27,6 +29,7 @@ const SkillColumn = styled.div`
      h3 {
         letter-spacing: 0.8px;
         font-weight: 500;
+        margin-top: 0;
     };
 
     ul {
@@ -34,9 +37,10 @@ const SkillColumn = styled.div`
         padding: 0;
     };
 
-    ul::before {
+    ul::after {
     content: "";
     display: block;
+    display: ${(props) => props.$hideLine ? "none" : "block"};
     width: 220px;         
     height: 2px;         
     background-color: #FD6F00;
@@ -59,7 +63,8 @@ function Skills(){
             <SkillsGrid>
 
             {skillList.map((group) => (
-                <SkillColumn key={group.category}>
+                <SkillColumn key={group.category}
+                $hideLine={group.category === "More"}> {/* if the category is more, $hideline is true and removes the line */}
                     <h3>{group.category}</h3>
 
                     <ul>

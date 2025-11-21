@@ -13,6 +13,8 @@ const FeaturedWrapper = styled.section`
         font-size: 43px;
         font-weight: bold;
         text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
     };
 
 `;
