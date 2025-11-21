@@ -30,15 +30,15 @@ const ImageWrapper = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fd6e0023;
+    background-color: #f581292b; /* overlay color */
     mix-blend-mode: multiply;
 };
 
     img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Gör att bilden inte ser utdragen ut */
-    display: block;    /* Tar bort en liten irriterande glipa i botten */
+    object-fit: cover; 
+    display: block;    
   };
 `;
 
