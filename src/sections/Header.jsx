@@ -26,7 +26,7 @@ const HeaderText = styled.section`
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: regular;
         line-height: 26px; 
     }

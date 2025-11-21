@@ -10,7 +10,7 @@ const FeaturedWrapper = styled.section`
     align-items: center;
 
     h2 {
-        font-size: 50px;
+        font-size: 43px;
         font-weight: bold;
         text-align: center;
     };
@@ -21,10 +21,10 @@ function FeaturedProjects() {
     return (
         <FeaturedWrapper>
             <h2>Featured Projects</h2>
-            {projects.map((item) => (
+            {projects.map((item) => ( //map through every item in my projects objekt
 
-            <ProjectCard 
-                key={item.key}
+            <ProjectCard  //creating props from my projects.js
+                key={item.id}
                 img={item.img}
                 title={item.title}
                 desc={item.desc}

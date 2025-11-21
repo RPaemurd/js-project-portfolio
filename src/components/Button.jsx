@@ -11,14 +11,15 @@ const StyledButton = styled.button`
     letter-spacing: 1px;
     font-size: 15px;
 
-    background-color: ${(props) => props.primary ? "#FD6F00" : "#FFFFFF" };
-    color: ${(props) => props.primary ? "#FFF": "#FD6F00" };
-    border: 2px solid ${(props) => props.primary ? "#FFF" : "#FD6F00" };
+    /* if the button has props primary use */
+    background-color: ${(props) => props.$primary ? "#FD6F00" : "#FFFFFF" };
+    color: ${(props) => props.$primary ? "#FFF": "#FD6F00" };
+    border: 2px solid ${(props) => props.$primary ? "#FFF" : "#FD6F00" };
 `;
 
 function Button({text, primary}) {
     return (
-        <StyledButton primary={primary}>{text}</StyledButton>
+        <StyledButton $primary={primary}>{text}</StyledButton>
     )
 };
 

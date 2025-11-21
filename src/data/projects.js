@@ -1,4 +1,5 @@
 import Findmytrail from "../assets/projects/Findmytrail.png"
+import WeatherApp from "../assets/projects/weatherapp.png"
 import NftProductCard from "../assets/projects/NFTproductcard.png"
 import StatsCard from "../assets/projects/statscard.png"
 import Solaris from "../assets/projects/Solaris.png"
@@ -14,16 +15,16 @@ export const projects = [
         tags: ["HTML", "CSS", "Javascript"]
     },
 
-    /* {
+    {
         id: 2,
-        img: Weatherapi,
+        img: WeatherApp,
         title: "Weather API",
         desc: "Web app built with...",
         tags: ["HTML", "CSS", "Typescript"]
-    }, */
+    },
 
       {
-        id: 2,
+        id: 3,
         img: NftProductCard,
         title: "NFT Product Card",
         desc: "Web app built with...",
@@ -31,7 +32,7 @@ export const projects = [
     },
 
       {
-        id: 3,
+        id: 4,
         img: StatsCard,
         title: "Stats Card",
         desc: "Web app built with...",
@@ -39,7 +40,7 @@ export const projects = [
     },
 
       {
-        id: 4,
+        id: 5,
         img: Solaris,
         title: "Solaris",
         desc: "Web app built with...",
@@ -47,7 +48,7 @@ export const projects = [
     },
 
       {
-        id: 5,
+        id: 6,
         img: Recipe,
         title: "Recipe Library",
         desc: "Built in Javacsript...",
@@ -55,7 +56,7 @@ export const projects = [
     },
 
       {
-        id: 6,
+        id: 7,
         img: ProductCard,
         title: "Product Preview Card",
         desc: "Built in Javacsript...",

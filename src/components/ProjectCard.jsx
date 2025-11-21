@@ -4,8 +4,8 @@ import Button from "./Button";
 const CardWrapper = styled.article`
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 390px;
+    width: 307px;
+    min-height: 380px;
     margin-bottom: 1rem;
 
     img {
@@ -22,18 +22,17 @@ const CardWrapper = styled.article`
 `;
 
 const ButtonWrapper = styled.section`
-
 `;
 
-function ProjectCard({ img, title, desc}) {
+function ProjectCard({ img, title, desc}) { //props
     return (
         <CardWrapper>
             <img src={img} alt="Project Picture" />
             <h3>{title}</h3>
             <p>{desc}</p>
 
-            <ButtonWrapper>
-                <Button primary text="Live Demo" />
+            <ButtonWrapper> 
+                <Button primary text="Live Demo" /> {/* manually assigning the props primary and text */}
                 <Button text="View Code" />
             </ButtonWrapper>
         </CardWrapper>
