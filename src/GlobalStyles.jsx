@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
       --secondary-color: #FFF;
       --bg-color: #f4f4f4;
       --text-color: #333333;
-      --font-main: "Inter", sans-serif;
+      --font-main: 'Helvetica Neue', sans-serif;
     };
 
   *, *::before, *::after {
@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    font-family: "Inter", sans-serif;
   }
 
   button, input, textarea, select {
