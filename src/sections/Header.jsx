@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import profileImg from '../assets/images/profilepic.svg';
+import profileImg from '../assets/images/img (2).svg';
 import SocialLinks from "../components/SocialLinks";
 
 const HeaderWrapper = styled.header`
@@ -33,7 +33,7 @@ const HeaderText = styled.section`
 `;
 
 const ProfileImage = styled.img`
-    width: 209.014px;
+    width: 219.014px;
     height: 277.897px;
     flex-shrink: 0;
 `;

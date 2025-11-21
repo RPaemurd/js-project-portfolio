@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import profileImg from '../assets/images/profilepic.svg';
+import profileImg from '../assets/images/img (2).svg';
 import SocialLinks from "../components/SocialLinks";
 
 const FooterWrapper = styled.section`

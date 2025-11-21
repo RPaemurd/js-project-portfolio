@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 const FeaturedWrapper = styled.section`
 
     display: flex;
-    padding: 30px 15px;
+    padding: 20px 15px;
     flex-direction: column;
     align-items: center;
 

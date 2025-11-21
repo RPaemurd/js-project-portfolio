@@ -16,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
   button, input, textarea, select {
     font-family: inherit; 
   }
+
+  h3 {
+  
+  };
 `;
 
 export default GlobalStyles;
