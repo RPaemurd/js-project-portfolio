@@ -5,16 +5,16 @@ import { projects } from "../data/projects";
 const FeaturedWrapper = styled.section`
 
     display: flex;
-    padding: 20px 15px;
+    padding: 1.25rem 0.938rem;
     flex-direction: column;
     align-items: center;
 
     h2 {
-        font-size: 43px;
+        font-size: 2.688rem;
         font-weight: bold;
         text-align: center;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     };
 
 `;

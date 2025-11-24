@@ -4,31 +4,31 @@ import SocialLinks from "../components/SocialLinks";
 
 const HeaderWrapper = styled.header`
     display: flex;
-    padding: 30px 15px;
+    padding: 1.875rem 0.938rem;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 1.5rem;
     align-self: stretch;
 `;
 
 const HeaderText = styled.section`
     
     h3 {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: medium;
     }
 
     h2 {
-        font-size: 60px;
+        font-size: 3.75rem;
         font-weight: bold;
-        line-height: 60px; 
+        line-height: 3.75rem; 
         margin: 0;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: regular;
-        line-height: 26px; 
+        line-height: 1.625rem; 
     }
 `;
 

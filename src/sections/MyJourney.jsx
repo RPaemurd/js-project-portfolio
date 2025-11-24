@@ -4,11 +4,11 @@ import styled from "styled-components";
 const MyJourneyWrapper = styled.section`
 
     h2 {
-        font-size: 42px;
+        font-size: 2.625rem;
         font-weight: bold;
         text-align: center;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
     };
 `;
 

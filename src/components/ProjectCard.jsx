@@ -13,7 +13,7 @@ const CardWrapper = styled.article`
     };
 
     p {
-        margin: 10px 0;
+        margin: 0.625rem 0;
     };
 `;
 

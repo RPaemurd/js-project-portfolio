@@ -7,7 +7,12 @@ const GlobalStyles = createGlobalStyle`
       --secondary-color: #FFF;
       --bg-color: #f4f4f4;
       --text-color: #333333;
-      --font-main: 'Helvetica Neue', sans-serif;
+      --font-main: "Inter", sans-serif;
+      --font-second: "Helvetica", sans-serif;
+
+
+      --
+
     };
 
   *, *::before, *::after {
@@ -18,16 +23,14 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-main);
   }
 
   button, input, textarea, select {
     font-family: inherit; 
   }
 
-  h3 {
   
-  };
 `;
 
 export default GlobalStyles;

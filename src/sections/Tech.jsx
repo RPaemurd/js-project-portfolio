@@ -4,15 +4,15 @@ const TechText = styled.section`
     text-align: center;
 
     h2 {
-        font-size: 42px;
+        font-size: 2.625rem;
         font-weight: bold;
         margin-top: 0;
     };
     
     p {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: regular;
-        line-height: 26px; 
+        line-height: 1.625rem; 
     };
 `;
 
