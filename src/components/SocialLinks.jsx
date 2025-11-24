@@ -8,7 +8,7 @@ const LinksWrapper = styled.div`
     
         display: flex;
         justify-content: space-around;
-        gap: 1.563rem;
+        gap: 2rem;
 `;
 
 function SocialLinks() {

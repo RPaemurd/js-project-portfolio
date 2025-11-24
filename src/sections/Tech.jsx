@@ -4,7 +4,7 @@ const TechText = styled.section`
     text-align: center;
 
     h2 {
-        font-size: 2.625rem;
+        font-size: 3rem;
         font-weight: bold;
         margin-top: 0;
     };
@@ -12,7 +12,7 @@ const TechText = styled.section`
     p {
         font-size: 1rem;
         font-weight: regular;
-        line-height: 1.625rem; 
+        line-height: 2rem; 
     };
 `;
 

@@ -9,7 +9,7 @@ const StyledButton = styled.button`
     border-radius: 10px;
     margin-top: 0.4rem;
     letter-spacing: 1px;
-    font-size: 0.938rem;
+    font-size: 1rem;
 
     /* if the button has props primary use */
     background-color: ${(props) => props.$primary ? "#FFFFFF" : "#e66300ff" };

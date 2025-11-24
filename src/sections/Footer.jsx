@@ -5,10 +5,10 @@ import SocialLinks from "../components/SocialLinks";
 const FooterWrapper = styled.section`
     display: flex;
     flex-direction: column;
-    padding: 0.313rem 0.938rem;
+    padding: 0.5rem 1rem;
     
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.5rem;
     align-self: stretch; 
 `;
 
@@ -20,11 +20,11 @@ const FooterText = styled.article`
 
     h2 {
         font-weight: bold;
-        font-size: 2.188rem;
+        font-size: 2rem;
     }
 
     p {
-        margin: 0.313rem 0;
+        margin: 0.5rem 0;
     }
 
     a {

@@ -8,10 +8,10 @@ const SkillsWrapper = styled.section`
         align-items: center;
 
     h2 {
-        font-size: 2.625rem;
+        font-size: 3rem;
         letter-spacing: 1px;
         margin: 0;
-        margin-bottom: 1.875rem;
+        margin-bottom: 2rem;
     };
 `;
 
@@ -44,11 +44,11 @@ const SkillColumn = styled.div`
     width: 220px;         
     height: 2px;         
     background-color: #FD6F00;
-    margin: 0.625rem auto 1.563rem auto; /* Centrerar linjen (auto) */
+    margin: 1rem auto 2rem auto; /* Centrerar linjen (auto) */
   };
 
     li {
-        line-height: 1.75rem;
+        line-height: 2rem;
         letter-spacing: 1px;
     };
 `;
