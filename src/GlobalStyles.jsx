@@ -3,15 +3,15 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 
     :root {
-      --primary-color: #e66300ff";
-      --secondary-color: #FFF;
-      --bg-color: #f4f4f4;
-      --text-color: #333333;
+      --primary-clr: #e66300ff;
+      --secnd-clr: #FFF;
+      --bg-clr: #f4f4f4;
+      --txt-clr: #333333;
       --font-main: "Inter", sans-serif;
       --font-second: "Helvetica", sans-serif;
 
-
-      --
+      --fs-h2: 3rem;
+      --fw-h2: bold; 
 
     };
 
@@ -28,6 +28,12 @@ const GlobalStyles = createGlobalStyle`
 
   button, input, textarea, select {
     font-family: inherit; 
+  }
+
+  h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin: 0;
   }
 
   

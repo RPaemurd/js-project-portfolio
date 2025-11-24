@@ -20,9 +20,7 @@ const HeaderText = styled.section`
 
     h2 {
         font-size: 4rem;
-        font-weight: bold;
         line-height: 4rem; 
-        margin: 0;
     }
 
     p {

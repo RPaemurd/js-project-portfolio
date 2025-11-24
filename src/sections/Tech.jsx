@@ -2,12 +2,6 @@ import styled from "styled-components";
 
 const TechText = styled.section`
     text-align: center;
-
-    h2 {
-        font-size: 3rem;
-        font-weight: bold;
-        margin-top: 0;
-    };
     
     p {
         font-size: 1rem;

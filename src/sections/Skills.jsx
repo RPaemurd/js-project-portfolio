@@ -8,9 +8,7 @@ const SkillsWrapper = styled.section`
         align-items: center;
 
     h2 {
-        font-size: 3rem;
         letter-spacing: 1px;
-        margin: 0;
         margin-bottom: 2rem;
     };
 `;

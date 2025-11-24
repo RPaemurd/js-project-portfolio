@@ -18,11 +18,6 @@ const FooterText = styled.article`
     text-align: left;
     margin-bottom: 2rem;
 
-    h2 {
-        font-weight: bold;
-        font-size: 2rem;
-    }
-
     p {
         margin: 0.5rem 0;
     }
