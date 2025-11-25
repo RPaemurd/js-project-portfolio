@@ -24,6 +24,6 @@ const StyledButton = styled.button`
     border: 2px solid ${(props) => props.$primary ? "var(--primary-clr)" : "var(--secnd-clr)" };
 
     @media (max-width: 360px) {
-        width: 260px;
+        width: 270px;
     }
 `;
