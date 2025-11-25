@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-const TechText = styled.section`
-    text-align: center;
-    
-    p {
-        font-size: 1rem;
-        font-weight: regular;
-        line-height: 2rem; 
-    };
-`;
-
 function Tech() {
     return(
         <TechText>
@@ -21,3 +11,13 @@ function Tech() {
 }
 
 export default Tech
+
+const TechText = styled.section`
+    text-align: center;
+    
+    p {
+        font-size: 1rem;
+        font-weight: regular;
+        line-height: 2rem; 
+    };
+`;

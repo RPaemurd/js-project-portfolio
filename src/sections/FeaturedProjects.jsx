@@ -3,6 +3,43 @@ import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 import { useRef } from "react";
 
+function FeaturedProjects() {
+  const scrollContainerRef = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <FeaturedWrapper>
+      <h2>Featured Projects</h2>
+      <ScrollButtonContainer>
+        <ScrollButton onClick={() => scroll(-320)}>{"<"}</ScrollButton>
+        <ProjectsContainer ref={scrollContainerRef}>
+          {projects.map((item) => (
+            <ProjectCard
+              key={item.id}
+              img={item.img}
+              title={item.title}
+              desc={item.desc}
+              netlifyUrl={item.netlifyUrl}
+              githubUrl={item.githubUrl}
+            />
+          ))}
+        </ProjectsContainer>
+        <ScrollButton onClick={() => scroll(320)}>{">"}</ScrollButton>
+      </ScrollButtonContainer>
+    </FeaturedWrapper>
+  );
+}
+
+export default FeaturedProjects
+
 const FeaturedWrapper = styled.section`
     
     display: flex;
@@ -80,40 +117,3 @@ const ProjectsContainer = styled.div`
         max-width: 1440px;
     }
 `;
-
-function FeaturedProjects() {
-  const scrollContainerRef = useRef(null);
-
-  const scroll = (scrollOffset) => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: scrollOffset,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  return (
-    <FeaturedWrapper>
-      <h2>Featured Projects</h2>
-      <ScrollButtonContainer>
-        <ScrollButton onClick={() => scroll(-320)}>{"<"}</ScrollButton>
-        <ProjectsContainer ref={scrollContainerRef}>
-          {projects.map((item) => (
-            <ProjectCard
-              key={item.id}
-              img={item.img}
-              title={item.title}
-              desc={item.desc}
-              netlifyUrl={item.netlifyUrl}
-              githubUrl={item.githubUrl}
-            />
-          ))}
-        </ProjectsContainer>
-        <ScrollButton onClick={() => scroll(320)}>{">"}</ScrollButton>
-      </ScrollButtonContainer>
-    </FeaturedWrapper>
-  );
-}
-
-export default FeaturedProjects

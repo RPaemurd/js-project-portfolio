@@ -7,17 +7,6 @@ import Skills from "./sections/Skills";
 import MyJourney from "./sections/MyJourney";
 import Tech from "./sections/Tech";
 
-const OuterWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  padding-bottom: 2rem;
-`;
-
 function App() {
   return (
     <>
@@ -35,3 +24,14 @@ function App() {
 }
 
 export default App;
+
+const OuterWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+`;

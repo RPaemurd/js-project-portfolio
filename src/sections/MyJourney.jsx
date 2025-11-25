@@ -1,14 +1,6 @@
 import Button from "../components/Button";
 import styled from "styled-components";
 
-const MyJourneyWrapper = styled.section`
-
-    h2 {
-        text-align: center;
-        margin-bottom: 2rem;
-    };
-`;
-
 function MyJourney() {
     return (
         <MyJourneyWrapper>
@@ -27,3 +19,11 @@ function MyJourney() {
 };
 
 export default MyJourney
+
+const MyJourneyWrapper = styled.section`
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+    };
+`;

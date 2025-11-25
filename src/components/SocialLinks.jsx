@@ -3,14 +3,6 @@ import linkedinIcon from '../assets/icons/linkedin.svg';
 import githubIcon from '../assets/icons/github.svg';
 import instagramIcon from '../assets/icons/instagram.svg';
 
-
-const LinksWrapper = styled.div`
-    
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-`;
-
 function SocialLinks() {
     return (
         <LinksWrapper>
@@ -28,3 +20,10 @@ function SocialLinks() {
 }
 
 export default SocialLinks;
+
+const LinksWrapper = styled.div`
+    
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+`;

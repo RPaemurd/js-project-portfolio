@@ -2,6 +2,24 @@ import styled from "styled-components";
 import profileImg from '../assets/images/img (2).svg';
 import SocialLinks from "../components/SocialLinks";
 
+function Footer() {
+    return (
+        <FooterWrapper>
+            <ProfileImage src={profileImg} alt="Profile picture rebecca" />
+            <FooterText>
+                <h2>Let's talk</h2>
+                <p>Rebecca Sighed Paemurd</p>
+                <p>+46(0)709 36 88 36</p>
+                <p>rebecca.paemurd@gmail.com</p>
+            </FooterText>
+            <SocialLinks />
+        </FooterWrapper>
+    )
+
+};
+
+export default Footer;
+
 const FooterWrapper = styled.section`
     display: flex;
     flex-direction: column;
@@ -31,21 +49,3 @@ const ProfileImage = styled.img`
     width: 209.014px;
     height: 277.897px;
 `;
-
-function Footer() {
-    return (
-        <FooterWrapper>
-            <ProfileImage src={profileImg} alt="Profile picture rebecca" />
-            <FooterText>
-                <h2>Let's talk</h2>
-                <p>Rebecca Sighed Paemurd</p>
-                <p>+46(0)709 36 88 36</p>
-                <p>rebecca.paemurd@gmail.com</p>
-            </FooterText>
-            <SocialLinks />
-        </FooterWrapper>
-    )
-
-};
-
-export default Footer;

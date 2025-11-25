@@ -1,5 +1,13 @@
 import styled from "styled-components"
 
+function Button({text, primary, onClick}) {
+    return (
+        <StyledButton onClick={onClick} $primary={primary}>{text}</StyledButton>
+    )
+};
+
+export default Button
+
 const StyledButton = styled.button`
     
     width: 300px;
@@ -19,11 +27,3 @@ const StyledButton = styled.button`
         width: 260px;
     }
 `;
-
-function Button({text, primary, onClick}) {
-    return (
-        <StyledButton onClick={onClick} $primary={primary}>{text}</StyledButton>
-    )
-};
-
-export default Button
