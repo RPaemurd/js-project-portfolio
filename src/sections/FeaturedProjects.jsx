@@ -9,6 +9,7 @@ const FeaturedWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
+    margin-top: 3rem;
 
     h2 {
         text-align: center;
@@ -43,9 +44,9 @@ const ScrollButton = styled.button`
     color: var(--secnd-clr);
   }
 
-  @media (max-width: 744px) {
-    width: 6px;
-    height: 70px;
+  @media (max-width: 600px) {
+    width: 7px;
+    height: 100px;
     border-radius: 2px;
     font-size: 0;
     background-color: var(--secnd-clr);

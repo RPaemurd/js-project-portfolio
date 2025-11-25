@@ -1,4 +1,3 @@
-
 import styled from "styled-components"
 
 const StyledButton = styled.button`
@@ -15,6 +14,10 @@ const StyledButton = styled.button`
     background-color: ${(props) => props.$primary ? "var(--secnd-clr)" : "var(--primary-clr)" };
     color: ${(props) => props.$primary ? "var(--primary-clr)" : "var(--secnd-clr)"};
     border: 2px solid ${(props) => props.$primary ? "var(--primary-clr)" : "var(--secnd-clr)" };
+
+    @media (max-width: 360px) {
+        width: 260px;
+    }
 `;
 
 function Button({text, primary, onClick}) {

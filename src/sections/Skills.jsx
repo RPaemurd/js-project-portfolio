@@ -11,6 +11,10 @@ const SkillsWrapper = styled.section`
         letter-spacing: 1px;
         margin-bottom: 2rem;
     };
+
+    @media (min-width: 943px) {
+        margin-bottom: 3rem; 
+    }
 `;
 
 const SkillsGrid = styled.section`
@@ -21,8 +25,18 @@ const SkillsGrid = styled.section`
 `;
 
 const SkillColumn = styled.div`
-
     text-align: center;
+    width: 100%; /* Mobil (standard): Staplad layout */
+
+    @media (min-width: 943px) {
+        width: 50%; /* Tablet: 2x2 rutnät */
+    }
+
+    @media (min-width: 944px) {
+        width: 25%; /* Desktop: Alla fyra på en rad */
+        position: relative;
+         padding: 0 3rem;
+    }
 
      h3 {
         letter-spacing: 0.8px;
@@ -36,14 +50,23 @@ const SkillColumn = styled.div`
     };
 
     ul::after {
-    content: "";
-    display: block;
-    display: ${(props) => props.$hideLine ? "none" : "block"};
-    width: 220px;         
-    height: 2px;         
-    background-color: #FD6F00;
-    margin: 1rem auto 2rem auto; /* Centrerar linjen (auto) */
-  };
+        content: "";
+        display: ${(props) => (props.$hideLine ? "none" : "block")};
+        width: 220px;         
+        height: 2px;         
+        background-color: #FD6F00;
+        margin: 1rem auto 2rem auto;
+
+        @media (min-width: 944px) {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 80%;
+            margin: 0;
+        }
+    };
 
     li {
         line-height: 2rem;
