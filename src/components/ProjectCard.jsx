@@ -7,6 +7,7 @@ const CardWrapper = styled.article`
     width: 307px;
     min-height: 380px;
     margin-bottom: 1rem;
+    cursor: pointer; 
 
     h3 {
         margin: 0.4rem 0;

@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
+import { useRef } from "react";
 
 const FeaturedWrapper = styled.section`
-
+    
     display: flex;
     padding: 1rem 1rem;
     flex-direction: column;
     align-items: center;
+    flex: 0 0 auto;
+
 
     h2 {
         text-align: center;
@@ -16,23 +19,95 @@ const FeaturedWrapper = styled.section`
 
 `;
 
-function FeaturedProjects() {
-    return (
-        <FeaturedWrapper>
-            <h2>Featured Projects</h2>
-            {projects.map((item) => ( //map through every item in my projects objekt
+const ScrollButtonContainer = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+`;
 
-            <ProjectCard  //creating props from my projects.js
-                key={item.id}
-                img={item.img}
-                title={item.title}
-                desc={item.desc}
-                netlifyUrl={item.netlifyUrl}
-                githubUrl={item.githubUrl}
+const ScrollButton = styled.button`
+  background-color: var(--secnd-clr);
+  color: var(--primary-clr);
+  border: 2px solid var(--primary-clr);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin: 0 0.5rem;
+
+  &:hover {
+    background-color: var(--primary-clr);
+    color: var(--secnd-clr);
+  }
+`;
+
+const ProjectsContainer = styled.div`
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    @media (min-width: 544px) {
+        max-width: 544px;
+    }
+
+    @media (min-width: 1100px) {
+        max-width: 1100px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 1440px;
+    }
+`;
+
+function FeaturedProjects() {
+  const scrollContainerRef = useRef(null);
+
+  const scroll = (scrollOffset) => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: scrollOffset,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <FeaturedWrapper>
+      <h2>Featured Projects</h2>
+      <ScrollButtonContainer>
+        <ScrollButton onClick={() => scroll(-320)}>{"<"}</ScrollButton>
+        <ProjectsContainer ref={scrollContainerRef}>
+          {projects.map((item) => (
+            <ProjectCard
+              key={item.id}
+              img={item.img}
+              title={item.title}
+              desc={item.desc}
+              netlifyUrl={item.netlifyUrl}
+              githubUrl={item.githubUrl}
             />
-        ))}
-        </FeaturedWrapper>
-    )
+          ))}
+        </ProjectsContainer>
+        <ScrollButton onClick={() => scroll(320)}>{">"}</ScrollButton>
+      </ScrollButtonContainer>
+    </FeaturedWrapper>
+  );
 }
 
 export default FeaturedProjects
