@@ -6,21 +6,17 @@ import { useRef } from "react";
 const FeaturedWrapper = styled.section`
     
     display: flex;
-    padding: 1rem 1rem;
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
-
 
     h2 {
         text-align: center;
         margin-bottom: 2rem;
     };
-
 `;
 
 const ScrollButtonContainer = styled.div`
-  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -46,6 +42,15 @@ const ScrollButton = styled.button`
     background-color: var(--primary-clr);
     color: var(--secnd-clr);
   }
+
+  @media (max-width: 744px) {
+    width: 6px;
+    height: 70px;
+    border-radius: 2px;
+    font-size: 0;
+    background-color: var(--secnd-clr);
+    border: 1px solid var(--primary-clr);
+  }
 `;
 
 const ProjectsContainer = styled.div`
@@ -53,8 +58,8 @@ const ProjectsContainer = styled.div`
     overflow-x: auto;
     gap: 1rem;
     width: 100%;
-    max-width: 320px;
-    padding: 1rem 0;
+    max-width: 260px;
+    
 
     &::-webkit-scrollbar {
         display: none;
