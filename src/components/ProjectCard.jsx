@@ -24,7 +24,7 @@ export default ProjectCard
 const CardWrapper = styled.article`
     display: flex;
     flex-direction: column;
-    width: 307px;
+    width: 306px;
     min-height: 380px;
     margin-bottom: 1rem;
     cursor: pointer; 

@@ -82,12 +82,7 @@ const ScrollButton = styled.button`
   }
 
   @media (max-width: 600px) {
-    width: 7px;
-    height: 100px;
-    border-radius: 2px;
-    font-size: 0;
-    background-color: var(--secnd-clr);
-    border: 1px solid var(--primary-clr);
+    display: none;
   }
 `;
 
@@ -96,7 +91,7 @@ const ProjectsContainer = styled.div`
     overflow-x: auto;
     gap: 1rem;
     width: 100%;
-    max-width: 260px;
+    max-width: 270px;
     
 
     &::-webkit-scrollbar {
