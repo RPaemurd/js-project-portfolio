@@ -10,10 +10,14 @@ function Header() {
                 <h2>Frontend Developer</h2>
                 <p>I'm a developer-in-training (diving deep into React and Node.js!) who believes great code is only half the story. The other half? Great communication!
                     My background isn't just in tech; I spent years in the service industry, which means I really get teamwork, building relationships, and figuring out what people actually want. I'm passionate about building dynamic apps that don't just work, but feel amazing to use (I'm a total advocate for good UX).</p>
+             <SocialLinksWrapper>
+                <SocialLinks />
+            </SocialLinksWrapper>
             </HeaderText>
-            <SocialLinks />
+            
             <ProfileImage src={profileImg} alt="Rebecca Profile Picture" />
         </HeaderWrapper>
+       
     )
 }
 
@@ -26,6 +30,11 @@ const HeaderWrapper = styled.header`
     align-items: center;
     gap: 2rem;
     align-self: stretch;
+
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+    }
 `;
 
 const HeaderText = styled.section`
@@ -51,4 +60,9 @@ const ProfileImage = styled.img`
     width: 219.014px;
     height: 277.897px;
     flex-shrink: 0;
+`;
+
+const SocialLinksWrapper = styled.div`
+    margin: 3rem 0;
+    display: flex;
 `;
