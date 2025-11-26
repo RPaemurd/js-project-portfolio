@@ -11,10 +11,10 @@ function ProjectCard({ img, title, desc, netlifyUrl, githubUrl}) { //props
             <h3>{title}</h3>
             <p>{desc}</p>
 
-            {/* <ButtonWrapper>  */}
+            <ButtonWrapper> 
                 <Button onClick={() => window.open(netlifyUrl, "_blank")} text="Live Demo" /> {/* manually assigning the props primary and text */}
                 <Button onClick={() => window.open(githubUrl, "_blank")} primary text="View Code" />
-            {/* </ButtonWrapper> */}
+            </ButtonWrapper>
         </CardWrapper>
     )
 };
@@ -27,7 +27,6 @@ const CardWrapper = styled.article`
     width: 306px;
     min-height: 380px;
     margin-bottom: 1rem;
-    cursor: pointer; 
 
     h3 {
         margin: 0.4rem 0;
@@ -63,5 +62,13 @@ const ImageWrapper = styled.div`
   };
 `;
 
-/* const ButtonWrapper = styled.div`
-`; */
+const ButtonWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+      
+    @media (min-width: 1100px) {
+        flex-direction: row;
+        gap: 1rem;
+    }
+`;

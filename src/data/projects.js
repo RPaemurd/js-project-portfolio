@@ -11,7 +11,7 @@ export const projects = [
         id: 1,
         img: Findmytrail,
         title: "Find My Trail",
-        desc: "Built with...",
+        desc: "Webb app built with...",
         tags: ["HTML", "CSS", "Javascript"],
         netlifyUrl: "https://js-project-business.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-business-site" 

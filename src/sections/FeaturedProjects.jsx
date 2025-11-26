@@ -75,6 +75,7 @@ const ScrollButton = styled.button`
   justify-content: center;
   z-index: 10;
   margin: 0 0.5rem;
+  padding-bottom: 2px;
 
   &:hover {
     background-color: var(--primary-clr);

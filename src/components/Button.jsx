@@ -17,6 +17,7 @@ const StyledButton = styled.button`
     margin-top: 0.4rem;
     letter-spacing: 1px;
     font-size: 1rem;
+    cursor: pointer; 
 
     /* if the button has props primary use */
     background-color: ${(props) => props.$primary ? "var(--secnd-clr)" : "var(--primary-clr)" };
