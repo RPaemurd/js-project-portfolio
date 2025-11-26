@@ -3,9 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
     :root {
-      --primary-clr: #e66300ff;
+      --primary-clr: #BF5400;
       --secnd-clr: #FFF;
-      --bg-clr: #f4f4f4;
+      --bg-clr: #FFF;
       --txt-clr: #333333;
       --font-main: "Inter", sans-serif;
       --font-second: "Helvetica", sans-serif;
@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    background-color: var(--bg-clr);
     font-family: var(--font-main);
   }
 
