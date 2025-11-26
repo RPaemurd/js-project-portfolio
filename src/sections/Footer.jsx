@@ -11,8 +11,10 @@ function Footer() {
                 <p>Rebecca Sighed Paemurd</p>
                 <p>+46(0)709 36 88 36</p>
                 <p>rebecca.paemurd@gmail.com</p>
+                <SocialLinksWrapper>
+                    <SocialLinks />
+                </SocialLinksWrapper>
             </FooterText>
-            <SocialLinks />
         </FooterWrapper>
     )
 
@@ -28,6 +30,13 @@ const FooterWrapper = styled.section`
     align-items: center;
     gap: 0.5rem;
     align-self: stretch; 
+
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 6rem;
+    }
 `;
 
 const FooterText = styled.article`
@@ -43,9 +52,19 @@ const FooterText = styled.article`
     a {
         margin-top: 1rem;
     }
+
+    @media (min-width: 900px) {
+        padding-top: 4rem;
+        
+    }
 `;
 
 const ProfileImage = styled.img`
     width: 209.014px;
     height: 277.897px;
+`;
+
+const SocialLinksWrapper = styled.div`
+    margin: 3rem 0;
+    display: flex;
 `;

@@ -31,7 +31,7 @@ const HeaderWrapper = styled.header`
     gap: 2rem;
     align-self: stretch;
 
-    @media (min-width: 1000px) {
+    @media (min-width: 900px) {
         display: flex;
         flex-direction: row;
     }

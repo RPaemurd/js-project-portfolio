@@ -22,6 +22,8 @@ export default MyJourney
 
 const MyJourneyWrapper = styled.section`
 
+    margin-top: 2rem;
+
     h2 {
         text-align: center;
         margin-bottom: 2rem;

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 
     :root {
       --primary-clr: #e66300ff;
@@ -39,4 +39,3 @@ const GlobalStyles = createGlobalStyle`
   
 `;
 
-export default GlobalStyles;

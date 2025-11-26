@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Header from "./sections/Header";
-import GlobalStyles from "./GlobalStyles";
+import { GlobalStyles } from "./GlobalStyles";
 import Footer from "./sections/Footer";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Skills from "./sections/Skills";

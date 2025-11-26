@@ -33,6 +33,7 @@ const SkillsWrapper = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 1rem;
 
     h2 {
         letter-spacing: 1px;
