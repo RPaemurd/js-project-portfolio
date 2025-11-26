@@ -108,7 +108,4 @@ const ProjectsContainer = styled.div`
         max-width: 1100px;
     }
 
-    @media (min-width: 1440px) {
-        max-width: 1440px;
-    }
 `;
