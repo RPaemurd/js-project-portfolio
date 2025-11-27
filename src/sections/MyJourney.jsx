@@ -40,10 +40,9 @@ const CardWrapper = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1rem;
-   
     overflow-x: auto;
     width: 100%;
-    max-width: 270px;
+    max-width: 320px;
     scroll-behavior: smooth;
 
     &::-webkit-scrollbar {

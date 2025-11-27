@@ -93,25 +93,23 @@ const ScrollButton = styled.button`
 `;
 
 const ProjectsContainer = styled.div`
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    width: 100%;
-    max-width: 270px;
-    
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  width: 100%;
+  max-width: 320px;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-    @media (min-width: 544px) {
-        max-width: 544px;
-    }
+  @media (min-width: 544px) {
+    max-width: 544px;
+  }
 
-    @media (min-width: 900px) {
-        max-width: 1100px;
-    }
-
+  @media (min-width: 900px) {
+    max-width: 1100px;
+  }
 `;

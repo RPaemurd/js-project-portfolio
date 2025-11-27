@@ -43,7 +43,7 @@ const FooterText = styled.article`
 
     align-self: flex-start;
     text-align: left;
-    margin-bottom: 2rem;
+   
 
     p {
         margin: 0.5rem 0;
@@ -65,6 +65,6 @@ const ProfileImage = styled.img`
 `;
 
 const SocialLinksWrapper = styled.div`
-    margin: 3rem 0;
+    margin: 2rem 0;
     display: flex;
 `;
