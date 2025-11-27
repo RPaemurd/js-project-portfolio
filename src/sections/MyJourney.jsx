@@ -38,12 +38,26 @@ const MyJourneyWrapper = styled.section`
 
 const CardWrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
-    align-items: center;
+   
+    overflow-x: auto;
+    width: 100%;
+    max-width: 270px;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    @media (min-width: 544px) {
+        max-width: 544px;
+    }
 
     @media (min-width: 900px) {
-        flex-direction: row;
+        max-width: 1100px;
         justify-content: center;
         align-items: flex-start;
     }

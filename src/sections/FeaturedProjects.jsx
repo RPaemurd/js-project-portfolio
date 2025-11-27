@@ -52,6 +52,10 @@ const FeaturedWrapper = styled.section`
         text-align: center;
         margin-bottom: 2rem;
     };
+
+    @media (min-width: 900px) {
+         max-width: 1000px;
+    }
 `;
 
 const ScrollButtonContainer = styled.div`

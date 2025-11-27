@@ -61,7 +61,7 @@ const ImageWrapper = styled.div`
 
 const ButtonWrapper = styled.div`
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
       
     @media (min-width: 900px) {
