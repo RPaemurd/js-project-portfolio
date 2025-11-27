@@ -40,7 +40,7 @@ const SkillsWrapper = styled.section`
         margin-bottom: 2rem;
     };
 
-    @media (min-width: 943px) {
+    @media (min-width: 900px) {
         margin-bottom: 3rem; 
     }
 `;
@@ -56,11 +56,11 @@ const SkillColumn = styled.div`
     text-align: center;
     width: 100%; /* Mobil (standard): Staplad layout */
 
-    @media (min-width: 943px) {
+    @media (min-width: 900px) {
         width: 50%; /* Tablet: 2x2 rutnät */
     }
 
-    @media (min-width: 944px) {
+    @media (min-width: 900px) {
         width: 25%; /* Desktop: Alla fyra på en rad */
         position: relative;
          padding: 0 3rem;
@@ -85,7 +85,7 @@ const SkillColumn = styled.div`
         background-color: #FD6F00;
         margin: 1rem auto 2rem auto;
 
-        @media (min-width: 944px) {
+        @media (min-width: 900px) {
             position: absolute;
             right: 0;
             top: 50%;

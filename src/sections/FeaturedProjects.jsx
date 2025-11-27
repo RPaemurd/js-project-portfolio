@@ -62,9 +62,9 @@ const ScrollButtonContainer = styled.div`
 `;
 
 const ScrollButton = styled.button`
-  background-color: var(--secnd-clr);
-  color: var(--primary-clr);
-  border: 2px solid var(--primary-clr);
+  background-color: var(--primary-clr);
+  color: var(--secnd-clr);
+  border: 2px solid var(--secnd-clr);
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -76,10 +76,11 @@ const ScrollButton = styled.button`
   z-index: 10;
   margin: 0 0.5rem;
   padding-bottom: 2px;
+  transform: translateY(-40px);
 
   &:hover {
-    background-color: var(--primary-clr);
-    color: var(--secnd-clr);
+    background-color: var(--secnd-clr);
+    color: var(--primary-clr);
   }
 
   @media (max-width: 600px) {
@@ -105,7 +106,7 @@ const ProjectsContainer = styled.div`
         max-width: 544px;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 900px) {
         max-width: 1100px;
     }
 

@@ -3,8 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
     :root {
-      --primary-clr: #BF5400;
-      --secnd-clr: #FFF;
+      --secnd-clr: #BF5400;
+      --primary-clr: #FFF;
       --bg-clr: #FFF;
       --txt-clr: #333333;
       --font-main: "Inter", sans-serif;
