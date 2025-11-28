@@ -47,14 +47,20 @@ const FeaturedWrapper = styled.section`
     align-items: center;
     flex: 0 0 auto;
     margin-top: 3rem;
+    margin-left: 1.3rem;
 
     h2 {
         text-align: center;
-        margin-bottom: 2rem;
+      margin-bottom: 2rem;
     };
 
+    @media (min-width: 375px) {
+      margin-left: 0
+    }
+
     @media (min-width: 900px) {
-         max-width: 1000px;
+      max-width: 900px;
+         
     }
 `;
 

@@ -31,8 +31,7 @@ const MyJourneyWrapper = styled.section`
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        margin: 0;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
     }
 `;
 
@@ -44,12 +43,17 @@ const CardWrapper = styled.div`
     width: 100%;
     max-width: 320px;
     scroll-behavior: smooth;
+    margin-left: 1.3rem;
 
     &::-webkit-scrollbar {
         display: none;
     }
     -ms-overflow-style: none;
     scrollbar-width: none;
+
+    @media (min-width: 375px) {
+      margin-left: 0
+    }
 
     @media (min-width: 544px) {
         max-width: 544px;

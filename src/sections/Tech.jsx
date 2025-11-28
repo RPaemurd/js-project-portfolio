@@ -14,7 +14,7 @@ export default Tech
 
 const TechText = styled.section`
     text-align: center;
-    margin: 2rem 0;
+    margin: 1rem 0;
     
     p {
         font-size: 1rem;
