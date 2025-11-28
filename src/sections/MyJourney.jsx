@@ -30,12 +30,15 @@ function MyJourney() {
 export default MyJourney;
 
 const MyJourneyWrapper = styled.section`
-
     h2 {
-        font-size: 3rem;
+        font-size: 3.7rem;
         font-weight: bold;
         text-align: center;
         margin: 2rem 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 `;
 
@@ -47,7 +50,6 @@ const CardWrapper = styled.div`
     width: 100%;
     max-width: 320px;
     scroll-behavior: smooth;
-    margin-left: 1.3rem;
 
     &::-webkit-scrollbar {
         display: none;
@@ -55,9 +57,6 @@ const CardWrapper = styled.div`
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    @media (min-width: 375px) {
-      margin-left: 0
-    }
 
     @media (min-width: 544px) {
         max-width: 544px;

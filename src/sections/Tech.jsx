@@ -15,9 +15,13 @@ export default Tech
 const TechText = styled.section`
     text-align: center;
     margin: 1rem 0;
+
+    h2 {
+        font-size: 3.7rem;
+    }
     
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: regular;
         line-height: 2rem; 
         margin: 0 auto;

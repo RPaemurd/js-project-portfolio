@@ -18,7 +18,7 @@ const StyledButton = styled.button`
     border-radius: 10px;
     margin-top: 0.4rem;
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer; 
 
     /* if the button has props primary use */

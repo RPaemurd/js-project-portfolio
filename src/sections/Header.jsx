@@ -34,18 +34,23 @@ const HeaderWrapper = styled.header`
     @media (min-width: 900px) {
         display: flex;
         flex-direction: row;
+        padding: 2rem 0;
+
+        h3 {
+            font-size: 6.25rem;
+        }
     }
 `;
 
 const HeaderText = styled.section`
     
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: medium;
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 3.7rem;
         line-height: 4rem; 
     }
 
@@ -53,6 +58,10 @@ const HeaderText = styled.section`
         font-size: 1rem;
         font-weight: regular;
         line-height: 2rem; 
+    }
+    
+     @media (min-width: 700px) {
+        margin-left: 2rem;
     }
 `;
 

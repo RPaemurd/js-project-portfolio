@@ -31,6 +31,10 @@ const FooterWrapper = styled.section`
     gap: 0.5rem;
     align-self: stretch; 
 
+    h2 {
+        font-size: 3.7rem;
+    }
+
     @media (min-width: 900px) {
         display: flex;
         flex-direction: row;
@@ -43,14 +47,19 @@ const FooterText = styled.article`
 
     align-self: flex-start;
     text-align: left;
-   
+    margin-left: 1rem;
 
     p {
         margin: 0.5rem 0;
+        font-size: 1rem;
     }
 
     a {
         margin-top: 1rem;
+    }
+
+    @media (min-width: 700px) {
+        margin-left: 2rem;
     }
 
     @media (min-width: 900px) {

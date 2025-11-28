@@ -32,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    font-size: 2.7rem;
+    font-size: 3.7rem;
     font-weight: bold;
     margin: 0;
   }

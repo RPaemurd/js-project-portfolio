@@ -51,21 +51,20 @@ function FeaturedProjects() {
 export default FeaturedProjects
 
 const FeaturedWrapper = styled.section`
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 0 0 auto;
     margin-top: 3rem;
-    margin-left: 1.3rem;
 
     h2 {
         text-align: center;
         margin-bottom: 2rem;
+        font-size: 3.7rem;
     };
 
-    @media (min-width: 375px) {
-      margin-left: 0
+    h3 {
+      font-size: 1.5rem;
     }
 
     @media (min-width: 900px) {
