@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+// Button is a reusable styled button component
+// Accepts text, primary (for styling), and onClick handler as props
 function Button({text, primary, onClick}) {
     return (
         <StyledButton onClick={onClick} $primary={primary}>{text}</StyledButton>

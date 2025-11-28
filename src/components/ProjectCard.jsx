@@ -2,10 +2,13 @@ import styled from "styled-components";
 import { CardWrapper, ImageWrapper } from "../assets/styles/CardStyles";
 import Button from "./Button";
 
-function ProjectCard({ img, title, desc, netlifyUrl, githubUrl}) { //props
+// ProjectCard displays a single project with image, title, description, and two action buttons
+// Receives all data as props for reusability
+function ProjectCard({ img, title, desc, netlifyUrl, githubUrl}) {
     return (
         <CardWrapper>
             <ImageWrapper>
+                {/* Project image passed as prop */}
                 <img src={img} alt="Project Picture" />
             </ImageWrapper>
 
@@ -13,7 +16,9 @@ function ProjectCard({ img, title, desc, netlifyUrl, githubUrl}) { //props
             <p>{desc}</p>
 
             <ButtonWrapper> 
-                <Button onClick={() => window.open(netlifyUrl, "_blank")} text="Live Demo" /> {/* manually assigning the props primary and text */}
+                {/* Button opens the live demo in a new tab */}
+                <Button onClick={() => window.open(netlifyUrl, "_blank")} text="Live Demo" />
+                {/* Button opens the GitHub repo in a new tab, styled as primary */}
                 <Button onClick={() => window.open(githubUrl, "_blank")} primary text="View Code" />
             </ButtonWrapper>
         </CardWrapper>
