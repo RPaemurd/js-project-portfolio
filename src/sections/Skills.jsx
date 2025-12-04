@@ -63,16 +63,13 @@ const SkillsGrid = styled.section`
 
 const SkillColumn = styled.div`
     text-align: center;
-    width: 100%; /* Mobil (standard): Staplad layout */
+    width: 100%; 
 
     @media (min-width: 900px) {
-        width: 50%; /* Tablet: 2x2 rutnät */
-    }
-
-    @media (min-width: 900px) {
-        width: 25%; /* Desktop: Alla fyra på en rad */
+        width: 50%; 
+        width: 25%; 
         position: relative;
-         padding: 0 3rem;
+        padding: 0 3rem;
     }
 
      h3 {
