@@ -65,13 +65,6 @@ const SkillColumn = styled.div`
     text-align: center;
     width: 100%; 
 
-    @media (min-width: 900px) {
-        width: 50%; 
-        width: 25%; 
-        position: relative;
-        padding: 0 3rem;
-    }
-
      h3 {
         letter-spacing: 0.8px;
         font-weight: 500;
@@ -83,6 +76,11 @@ const SkillColumn = styled.div`
         padding: 0;
     };
 
+     li {
+        line-height: 2rem;
+        letter-spacing: 1px;
+    };
+
     ul::after {
         content: "";
         display: ${(props) => (props.$hideLine ? "none" : "block")};
@@ -91,7 +89,15 @@ const SkillColumn = styled.div`
         background-color: #FD6F00;
         margin: 1rem auto 2rem auto;
 
-        @media (min-width: 900px) {
+    };
+
+    @media (min-width: 900px) {
+        width: 50%; 
+        width: 25%; 
+        position: relative;
+        padding: 0 3rem;
+
+        ul::after{
             position: absolute;
             right: 0;
             top: 50%;
@@ -100,10 +106,5 @@ const SkillColumn = styled.div`
             height: 80%;
             margin: 0;
         }
-    };
-
-    li {
-        line-height: 2rem;
-        letter-spacing: 1px;
-    };
+    }
 `;
