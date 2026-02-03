@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
-import { useInView } from "react-intersection-observer";
 
 const slideInBottom = keyframes`
   from {
@@ -24,11 +23,11 @@ const FeaturedWrapper = styled.section`
     h2 {
         text-align: center;
         margin-bottom: 2rem;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     span{
-        color: #BF5400;
+        color: #f8730d;
     }
 `;
 
@@ -43,11 +42,6 @@ const ProjectsContainer = styled.div`
     /* Tablet: 2 columns */
     @media (min-width: 650px) {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Desktop: 3 columns */
-    @media (min-width: 950px) {
-        grid-template-columns: repeat(3, 1fr);
     }
 `;
 

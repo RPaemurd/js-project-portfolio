@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
 
     :root {
-      --secnd-clr: #BF5400;
+      --secnd-clr: #e4690c;
       --primary-clr: #FFF;
       --bg-clr: #FFF;
       --txt-clr: #333333;
@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     background-color: var(--bg-clr);
     font-family: var(--font-main);
-  }
+  }b
 
   button, input, textarea, select {
     font-family: inherit; 

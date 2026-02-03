@@ -11,7 +11,7 @@ const SkillsWrapper = styled.section`
     h2 {
         letter-spacing: 1px;
         margin-bottom: 2rem;
-        font-size: 3rem
+        font-size: 2.8rem;
     };
 
     h3 {
@@ -61,31 +61,25 @@ const SkillColumn = styled.div`
         height: 2px;         
         background-color: #FD6F00;
         margin: 1rem auto 2rem auto;
-
     };
 
     @media (min-width: 900px) {
-        width: 50%; 
-        width: 25%; 
-        position: relative;
-        padding: 0 3rem;
-
-        ul::after{
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 2px;
-            height: 80%;
-            margin: 0;
-        }
+    width: 25%;
+    padding: 0 3rem;
+    /* Använd border istället för ::after */
+    border-right: ${(props) => (props.$hideLine ? "none" : "3px solid #FD6F00")};
+    
+    /* Om du använder border-right, ta bort ul::after helt i media queryn */
+    ul::after {
+        display: none;
     }
+}
 `;
 
 function Skills(){
     return (
         <SkillsWrapper>
-            {/* <h2>Skills</h2> */}
+            <h2>Skills</h2> 
             <SkillsGrid>
 
             {skillList.map((group) => (

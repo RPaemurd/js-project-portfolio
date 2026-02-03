@@ -20,6 +20,10 @@ const StyledProjectCard = styled(CardWrapper)`
   ${({ $inView, $delay }) => $inView && css`
     animation: ${slideInBottom} 0.5s ease-out ${$delay}s forwards;
   `}
+
+  h3{
+    padding-top: 1rem;
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -31,6 +35,7 @@ const ButtonWrapper = styled.div`
     @media (min-width: 900px) {
         flex-direction: row;
         gap: 0.5rem;
+        padding: 1rem 0;
     }
 `;
 

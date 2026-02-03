@@ -1,8 +1,6 @@
 import Findmytrail from "../assets/projects/Findmytrail.png"
 import WeatherApp from "../assets/projects/weatherapp.png"
 import NftProductCard from "../assets/projects/NFTproductcard.png"
-import StatsCard from "../assets/projects/statscard.png"
-import Solaris from "../assets/projects/Solaris.png"
 import Recipe from "../assets/projects/RecipieLibrary.png"
 import ProductCard from "../assets/projects/Productpreviewcard.png"
 import MovieProject from "../assets/projects/Moveproject.png"
@@ -11,13 +9,13 @@ import HappyThoughts from "../assets/projects/HappyThoughts.png"
 
 export const projects = [
 
-     {
+      {
         id: 1,
-        img: HappyThoughts,
-        title: "Happy Thoughts Project",
+        img: TodoApp,
+        title: "Project To Do",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://todotechnigo.netlify.app/",
-        githubUrl: "https://github.com/RPaemurd/js-project-happy-thoughts" 
+        githubUrl: "https://github.com/RPaemurd/js-project-todo" 
     },
     {
         id: 2,
@@ -27,14 +25,13 @@ export const projects = [
         netlifyUrl: "https://happy-thoughts-app-technigo.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-business-site" 
     },
-
-       {
+     {
         id: 3,
-        img: TodoApp,
-        title: "Project To Do",
+        img: HappyThoughts,
+        title: "Happy Thoughts Project",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://todotechnigo.netlify.app/",
-        githubUrl: "https://github.com/RPaemurd/js-project-todo" 
+        githubUrl: "https://github.com/RPaemurd/js-project-happy-thoughts" 
     },
 
       {
@@ -73,14 +70,14 @@ export const projects = [
         githubUrl: "https://github.com/RPaemurd/NFT-product-card" 
     },
 
-      {
+      /* {
         id: 8,
         img: StatsCard,
         title: "Stats Card",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://stats-preview-card-frm.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/Stats-Preview-Card" 
-    },
+    }, */
 
       /* {
         id: 9,
@@ -93,7 +90,7 @@ export const projects = [
     }, */
 
       {
-        id: 10,
+        id: 8,
         img: ProductCard,
         title: "Product Preview Card",
         tags: ["HTML", "CSS"],

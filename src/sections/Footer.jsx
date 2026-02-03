@@ -39,7 +39,7 @@ const FooterText = styled.article`
     }
 
     span {
-        color: #BF5400;
+        color: #f8730d;
     }
 
     @media (min-width: 700px) {

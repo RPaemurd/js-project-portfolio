@@ -51,7 +51,7 @@ const HeaderText = styled.section`
     }
 
     span {
-        color: #BF5400;
+        color: #f8730d;
     }
 
     h2 {
