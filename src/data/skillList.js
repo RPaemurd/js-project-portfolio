@@ -2,17 +2,17 @@ export const skillList = [
 
     { 
         category: "Code",
-        items: ["HTML5", "CSS3", "JavaScript ES6", "React"]
+        items: ["HTML5", "CSS3", "JavaScript ES6", "React", "Node.js", "Next.js"]
     },
     
     {
         category: "Toolbox",
-        items: ["Figma", "Slack", "VScode", "GitHub", "Git"]
+        items: ["Figma", "Slack", "VScode", "Cursur", "GitHub", "Git", "MongoDB"]
     },
 
     {
         category: "Upcoming",
-        items: ["Node.js", "Next.js", "Tailwind", "MongoDB", "AWS"]
+        items: ["Tailwind", "AWS", "PHP"]
     },
 
     {

@@ -6,11 +6,11 @@ import { useInView } from "react-intersection-observer";
 const slideInBottom = keyframes`
   from {
     opacity: 0;
-    transform: translateY(50px); /* Startar 50px under sin vanliga position */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Landar på sin vanliga plats */
+    transform: translateY(0); 
   }
 `;
 
@@ -26,11 +26,14 @@ const FeaturedWrapper = styled.section`
         margin-bottom: 2rem;
         font-size: 3rem;
     }
+    
+    span{
+        color: #BF5400;
+    }
 `;
 
 const ProjectsContainer = styled.div`
     display: grid;
-    /* Som standard: 1 kolumn (för mobil) */
     grid-template-columns: 1fr; 
     gap: 2rem;
     width: 100%;
@@ -51,7 +54,7 @@ const ProjectsContainer = styled.div`
 function FeaturedProjects() {
     return (
         <FeaturedWrapper>
-            <h2>My Latest Projects</h2>
+            <h2>My Latest <span>Projects</span></h2>
             <ProjectsContainer>
                 {projects.map((item, index) => (
                     <ProjectCard

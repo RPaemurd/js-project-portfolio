@@ -12,7 +12,7 @@ const FooterWrapper = styled.section`
     align-self: stretch; 
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     @media (min-width: 900px) {
@@ -36,6 +36,10 @@ const FooterText = styled.article`
 
     a {
         margin-top: 1rem;
+    }
+
+    span {
+        color: #BF5400;
     }
 
     @media (min-width: 700px) {
@@ -63,7 +67,7 @@ function Footer() {
         <FooterWrapper>
             <ProfileImage src={profileImg} alt="Profile picture rebecca" />
             <FooterText>
-                <h2>Let's talk</h2>
+                <h2>Let's <span>Connect</span> here</h2>
                 <p>Rebecca Sighed Paemurd</p>
                 <p>+46(0)709 36 88 36</p>
                 <p>rebecca.paemurd@gmail.com</p>

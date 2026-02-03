@@ -50,6 +50,10 @@ const HeaderText = styled.section`
         font-weight: 500;
     }
 
+    span {
+        color: #BF5400;
+    }
+
     h2 {
         font-size: 3.7rem;
         line-height: 4rem; 4
@@ -83,7 +87,7 @@ function Header() {
     return (
         <HeaderWrapper>
             <HeaderText>
-                <h3>I am Rebecca Sighed Paemurd</h3>
+                <h3>I am <span>Rebecca Sighed Paemurd</span></h3>
                 <h2>Frontend Developer</h2>
                 <p>I'm a developer-in-training (diving deep into React and Node.js!) who believes great code is only half the story. The other half? Great communication!
                     My background isn't just in tech; I spent years in the service industry, which means I really get teamwork, building relationships, and figuring out what people actually want. I'm passionate about building dynamic apps that don't just work, but feel amazing to use (I'm a total advocate for good UX).</p>

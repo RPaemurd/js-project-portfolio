@@ -85,7 +85,7 @@ const SkillColumn = styled.div`
 function Skills(){
     return (
         <SkillsWrapper>
-            <h2>Skills</h2>
+            {/* <h2>Skills</h2> */}
             <SkillsGrid>
 
             {skillList.map((group) => (
