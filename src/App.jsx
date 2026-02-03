@@ -4,7 +4,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import Footer from "./sections/Footer";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Skills from "./sections/Skills";
-import MyJourney from "./sections/MyJourney";
+/* import MyJourney from "./sections/MyJourney"; */
 import Tech from "./sections/Tech";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Skills />
           <FeaturedProjects />
           <Tech />
-          <MyJourney />
+       {/*    <MyJourney /> */}
       </OuterWrapper>
       <Footer />
     </>

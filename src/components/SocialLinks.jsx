@@ -12,9 +12,9 @@ function SocialLinks() {
             <a href="https://github.com/RPaemurd">
                 <img src={githubIcon} alt="GitHub" />
             </a>
-            <a href="https://www.instagram.com/">
+           {/*  <a href="https://www.instagram.com/">
                 <img src={instagramIcon} alt="Instagram" />
-            </a>
+            </a> */}
         </LinksWrapper>
     );
 }

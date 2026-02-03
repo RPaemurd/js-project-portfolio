@@ -1,4 +1,4 @@
-import FirstSteps from "../assets/images/article1.jpg"
+/* import FirstSteps from "../assets/images/article1.jpg"
 import LearningReact from "../assets/images/article2.jpg"
 
 export const journeyItems = [
@@ -22,5 +22,5 @@ export const journeyItems = [
         title: "Building My Portfolio",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit.",
         url: "https://example.com"
-    } */
-];
+    } 
+]; */

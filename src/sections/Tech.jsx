@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-function Tech() {
-    return(
-        <TechText>
-            <h2>Tech</h2>
-            <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Node.js,  Mongo DB, 
-                Web Accessibility, APIs, mob-programming, pair-programming, GitHub. </p>
-        </TechText>
-    )
-}
-
-export default Tech
-
 const TechText = styled.section`
     text-align: center;
     margin: 1rem 0;
@@ -34,3 +22,15 @@ const TechText = styled.section`
         }
     }
 `;
+
+function Tech() {
+    return(
+        <TechText>
+            <h2>Tech</h2>
+            <p>HTML, CSS, JavaScript, React, React Hooks, Node.js,  Mongo DB, 
+                Web Accessibility, APIs, mob-programming, pair-programming, Git. </p>
+        </TechText>
+    )
+}
+
+export default Tech

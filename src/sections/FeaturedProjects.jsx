@@ -1,13 +1,11 @@
 import styled from "styled-components";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
-// useRef is a React hook that lets you persist a mutable reference (e.g. to a DOM element) across renders
 import { useRef } from "react";
-
 
 // FeaturedProjects displays a horizontally scrollable list of project cards with scroll buttons
 function FeaturedProjects() {
-  // Ref to the scrollable container
+  
   const scrollContainerRef = useRef(null);
 
   // Scrolls the container left or right by a fixed offset (used by the arrow buttons)
@@ -32,7 +30,6 @@ function FeaturedProjects() {
           {projects.map((item) => (
             <ProjectCard
               key={item.id}
-              // Pass image, title, description, and URLs as props to ProjectCard
               img={item.img}
               title={item.title}
               desc={item.desc}

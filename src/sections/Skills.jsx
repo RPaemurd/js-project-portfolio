@@ -1,33 +1,6 @@
 import styled from "styled-components";
 import { skillList } from "../data/skillList.js";
 
-function Skills(){
-    return (
-        <SkillsWrapper>
-            <h2>Skills</h2>
-            <SkillsGrid>
-
-            {skillList.map((group) => (
-                <SkillColumn key={group.category}
-                $hideLine={group.category === "More"}> {/* if the category is more, $hideline is true and removes the line */}
-                    <h3>{group.category}</h3>
-
-                    <ul>
-                        {group.items.map((item) => (
-                            <li key={item}>{item}</li>
-                        ))}
-                    </ul>
-                </SkillColumn>
-                
-            ))}
-
-            </SkillsGrid>
-        </SkillsWrapper>
-    )
-}
-
-export default Skills
-
 const SkillsWrapper = styled.section`
 
         display: flex;
@@ -108,3 +81,31 @@ const SkillColumn = styled.div`
         }
     }
 `;
+
+function Skills(){
+    return (
+        <SkillsWrapper>
+            <h2>Skills</h2>
+            <SkillsGrid>
+
+            {skillList.map((group) => (
+                <SkillColumn key={group.category}
+                $hideLine={group.category === "More"}> {/* if the category is more, $hideline is true and removes the line */}
+                    <h3>{group.category}</h3>
+
+                    <ul>
+                        {group.items.map((item) => (
+                            <li key={item}>{item}</li>
+                        ))}
+                    </ul>
+                </SkillColumn>
+                
+            ))}
+
+            </SkillsGrid>
+        </SkillsWrapper>
+    )
+}
+
+export default Skills
+
