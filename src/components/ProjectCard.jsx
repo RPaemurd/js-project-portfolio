@@ -18,7 +18,7 @@ const StyledProjectCard = styled(CardWrapper)`
   opacity: 0; 
   
   ${({ $inView, $delay }) => $inView && css`
-    animation: ${slideInBottom} 0.8s ease-out ${$delay}s forwards;
+    animation: ${slideInBottom} 0.5s ease-out ${$delay}s forwards;
   `}
 `;
 
@@ -40,7 +40,7 @@ function ProjectCard({ img, title, netlifyUrl, githubUrl, index = 0 }) {
         threshold: 0.1,   
     });
 
-    const delay = index * 0.2;
+    const delay = index * 0.1;
 
     return (
         <StyledProjectCard ref={ref} $inView={inView} $delay={delay}>
