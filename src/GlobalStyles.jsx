@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 export const GlobalStyles = createGlobalStyle`
 
     :root {
@@ -32,11 +31,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
-    font-size: 3.7rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
   }
-
   
 `;
 

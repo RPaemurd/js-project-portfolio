@@ -5,7 +5,7 @@ const TechText = styled.section`
     margin: 1rem 0;
 
     h2 {
-        font-size: 3.7rem;
+        font-size: 3rem;
     }
     
     p {

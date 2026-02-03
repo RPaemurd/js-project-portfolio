@@ -11,7 +11,7 @@ const SkillsWrapper = styled.section`
     h2 {
         letter-spacing: 1px;
         margin-bottom: 2rem;
-        font-size: 3.7rem
+        font-size: 3rem
     };
 
     h3 {

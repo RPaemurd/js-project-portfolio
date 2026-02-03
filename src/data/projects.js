@@ -14,8 +14,7 @@ export const projects = [
      {
         id: 1,
         img: HappyThoughts,
-        title: "Happy thoughts Project",
-        desc: "Built in Javacsript...",
+        title: "Happy Thoughts Project",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://todotechnigo.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-happy-thoughts" 
@@ -24,7 +23,6 @@ export const projects = [
         id: 2,
         img: Findmytrail,
         title: "Find My Trail",
-        desc: "Webb app built with...",
         tags: ["HTML", "CSS", "Javascript"],
         netlifyUrl: "https://happy-thoughts-app-technigo.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-business-site" 
@@ -33,8 +31,7 @@ export const projects = [
        {
         id: 3,
         img: TodoApp,
-        title: "Project ToDo",
-        desc: "Built in Javacsript...",
+        title: "Project To Do",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://todotechnigo.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-todo" 
@@ -44,7 +41,6 @@ export const projects = [
         id: 4,
         img: MovieProject,
         title: "Movie Project",
-        desc: "Built in React...",
         tags: ["React"],
         netlifyUrl: "https://app.netlify.com/projects/movieproject-technigo/overview",
         githubUrl: "https://github.com/RPaemurd/js-project-movies" 
@@ -54,7 +50,6 @@ export const projects = [
         id: 5,
         img: Recipe,
         title: "Recipe Library",
-        desc: "Built in Javacsript...",
         tags: ["HTML", "CSS", "Javascrip"],
         netlifyUrl: "https://recipe-assignment-technigo.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-recipe-library" 
@@ -64,7 +59,6 @@ export const projects = [
         id: 6,
         img: WeatherApp,
         title: "Weather API",
-        desc: "Web app built with...",
         tags: ["HTML", "CSS", "Typescript"],
         netlifyUrl: "https://weather-app-tscript.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-weather-app" 
@@ -74,7 +68,6 @@ export const projects = [
         id: 7,
         img: NftProductCard,
         title: "NFT Product Card",
-        desc: "Web app built with...",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://npf-product-card.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/NFT-product-card" 
@@ -84,13 +77,12 @@ export const projects = [
         id: 8,
         img: StatsCard,
         title: "Stats Card",
-        desc: "Web app built with...",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://stats-preview-card-frm.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/Stats-Preview-Card" 
     },
 
-      {
+      /* {
         id: 9,
         img: Solaris,
         title: "Solaris",
@@ -98,13 +90,12 @@ export const projects = [
         tags: ["HTML", "CSS", "Javascript"],
         netlifyUrl: "https://solarisproject-fu.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/Javascript---Solaris" 
-    },
+    }, */
 
       {
         id: 10,
         img: ProductCard,
         title: "Product Preview Card",
-        desc: "Built in Javacsript...",
         tags: ["HTML", "CSS"],
         netlifyUrl: "https://sage-kleicha-45ebdd.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/Product-Preview-Card-fm" 

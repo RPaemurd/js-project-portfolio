@@ -4,7 +4,7 @@ export const CardWrapper = styled.article`
     display: flex;
     flex-direction: column;
     width: 306px;
-    min-height: 380px;
+    min-height: 300px;
     margin-bottom: 1rem;
 
     h3 {

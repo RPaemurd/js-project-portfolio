@@ -38,7 +38,7 @@ const HeaderWrapper = styled.header`
         padding: 2rem 0;
 
         h3 {
-            font-size: 6.25rem;
+            font-size: 5rem;
         }
     }
 `;
@@ -91,10 +91,8 @@ function Header() {
                 <SocialLinks />
             </SocialLinksWrapper>
             </HeaderText>
-            
             <ProfileImage src={profileImg} alt="Rebecca Profile Picture" />
         </HeaderWrapper>
-       
     )
 }
 

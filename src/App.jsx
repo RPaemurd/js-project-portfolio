@@ -4,26 +4,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import Footer from "./sections/Footer";
 import FeaturedProjects from "./sections/FeaturedProjects";
 import Skills from "./sections/Skills";
-/* import MyJourney from "./sections/MyJourney"; */
 import Tech from "./sections/Tech";
-
-function App() {
-  return (
-    <>
-      <GlobalStyles />
-      <OuterWrapper>
-        <Header />
-          <Skills />
-          <FeaturedProjects />
-          <Tech />
-       {/*    <MyJourney /> */}
-      </OuterWrapper>
-      <Footer />
-    </>
-  )
-}
-
-export default App;
 
 const OuterWrapper = styled.div`
   display: flex;
@@ -35,3 +16,20 @@ const OuterWrapper = styled.div`
   padding: 0 1rem;
   padding-bottom: 2rem;
 `;
+
+function App() {
+  return (
+    <>
+      <GlobalStyles />
+      <OuterWrapper>
+        <Header />
+          <Skills />
+          <FeaturedProjects />
+          <Tech />
+      </OuterWrapper>
+      <Footer />
+    </>
+  )
+}
+
+export default App;
