@@ -12,7 +12,7 @@ export const skillList = [
 
     {
         category: "Dev & Workflow",
-        items: ["GitHub", "Git", "VS Code", "Cursor", "AWS"]
+        items: ["GitHub", "Git", "VS Code", "Cursor"]
     },
 
     {
