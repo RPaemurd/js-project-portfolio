@@ -19,9 +19,8 @@ export const CardWrapper = styled.article`
 export const ImageWrapper = styled.div`
 
     position: relative;
-    height: 200px;
     width: 100%;
-
+    max-width: 550px;
     &::after {
     content: '';
     position: absolute;
@@ -33,8 +32,7 @@ export const ImageWrapper = styled.div`
 };
 
     img {
-    width: 100%;
-    height: 100%;
+    width: 150%;
     display: block;    
   };
 `;

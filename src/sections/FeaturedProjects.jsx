@@ -1,17 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
-
-const slideInBottom = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(50px); 
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); 
-  }
-`;
 
 const FeaturedWrapper = styled.section`
     display: flex;
@@ -41,7 +30,12 @@ const ProjectsContainer = styled.div`
 
     /* Tablet: 2 columns */
     @media (min-width: 650px) {
-        grid-template-columns: repeat(2, 1fr);
+       display: flex;
+        flex-direction: column;
+        gap: 4rem; 
+        width: 100%;
+        max-width: 1100px;
+        padding: 0 1rem; grid-template-columns: repeat(2, 1fr);
     }
 `;
 
@@ -56,6 +50,7 @@ function FeaturedProjects() {
                         index={index}
                         img={item.img}
                         title={item.title}
+                        desc={item.desc}
                         netlifyUrl={item.netlifyUrl}
                         githubUrl={item.githubUrl}
                     />

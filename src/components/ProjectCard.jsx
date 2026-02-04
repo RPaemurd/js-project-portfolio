@@ -15,15 +15,51 @@ const slideInBottom = keyframes`
 `;
 
 const StyledProjectCard = styled(CardWrapper)`
-  opacity: 0; 
-  
-  ${({ $inView, $delay }) => $inView && css`
-    animation: ${slideInBottom} 0.5s ease-out ${$delay}s forwards;
-  `}
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    height: auto; 
 
-  h3{
-    padding-top: 1rem;
-  }
+    ${({ $inView, $delay }) => $inView && css`
+        animation: ${slideInBottom} 0.5s ease-out ${$delay}s forwards;
+    `}
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem; 
+
+        &:nth-child(odd) {
+            /* Vi lägger till en marginal till vänster på texten/sektionen */
+            section { 
+                margin-left: 6rem; 
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            section { 
+                margin-right: 4rem; 
+            }
+        }
+        div:first-child {
+            max-width: 400px;
+        }
+    }
+`;
+
+const TextContent = styled.section`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    @media (min-width: 800px) {
+        align-items: flex-start; 
+    }
 `;
 
 const ButtonWrapper = styled.div`
@@ -39,7 +75,7 @@ const ButtonWrapper = styled.div`
     }
 `;
 
-function ProjectCard({ img, title, netlifyUrl, githubUrl, index = 0 }) {
+function ProjectCard({ img, title, desc, netlifyUrl, githubUrl, index = 0 }) {
     const { ref, inView } = useInView({
         triggerOnce: true, 
         threshold: 0.1,   
@@ -52,13 +88,15 @@ function ProjectCard({ img, title, netlifyUrl, githubUrl, index = 0 }) {
             <ImageWrapper>
                 <img src={img} alt={`${title} cover`} />
             </ImageWrapper>
-
+      <TextContent>
             <h3>{title}</h3>
+            <p>{desc}</p>
 
             <ButtonWrapper> 
                 <Button onClick={() => window.open(netlifyUrl, "_blank")} text="Live Demo" />
                 <Button onClick={() => window.open(githubUrl, "_blank")} primary text="View Code" />
             </ButtonWrapper>
+            </TextContent>
         </StyledProjectCard>
     );
 };

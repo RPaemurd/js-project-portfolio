@@ -14,7 +14,7 @@ const StyledButton = styled.button`
     
     width: 300px;
     height: 40px;
-    font-weight: 600;
+    font-weight: 400;
     border-radius: 10px;
     margin-top: 0.4rem;
     letter-spacing: 1px;
