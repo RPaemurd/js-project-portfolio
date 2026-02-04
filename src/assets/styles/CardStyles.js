@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const CardWrapper = styled.article`
     display: flex;
     flex-direction: column;
-    width: 306px;
-    min-height: 300px;
+    width: 100%;
+    max-width: 350px
     margin-bottom: 1rem;
 
     h3 {
@@ -14,14 +14,18 @@ export const CardWrapper = styled.article`
     p {
         margin: 1rem 0;
     };
+
+    @media (min-width: 900px) {
+        max-width: 1200px; 
+    }
 `;
 
 export const ImageWrapper = styled.div`
 
     position: relative;
     width: 100%;
-    max-width: 550px;
-    &::after {
+    max-width: 100%;
+    &::after {5
     content: '';
     position: absolute;
     top: 0;
@@ -32,7 +36,8 @@ export const ImageWrapper = styled.div`
 };
 
     img {
-    width: 150%;
+    width: 100%;
+    height: auto;
     display: block;    
   };
 `;

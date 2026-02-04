@@ -23,6 +23,12 @@ const StyledProjectCard = styled(CardWrapper)`
     width: 100%;
     height: auto; 
 
+    /* Storlek på mobilen */
+    div:first-child {
+        width: 90%; 
+        max-width: 300px; 
+    }
+
     ${({ $inView, $delay }) => $inView && css`
         animation: ${slideInBottom} 0.5s ease-out ${$delay}s forwards;
     `}
@@ -31,9 +37,14 @@ const StyledProjectCard = styled(CardWrapper)`
         flex-direction: row;
         justify-content: center;
         gap: 3rem; 
+        max-width: 1200px; 
+
+        div:first-child {
+            width: 60%;
+            max-width: 700px;
+        }
 
         &:nth-child(odd) {
-            /* Vi lägger till en marginal till vänster på texten/sektionen */
             section { 
                 margin-left: 6rem; 
             }
@@ -45,9 +56,8 @@ const StyledProjectCard = styled(CardWrapper)`
                 margin-right: 4rem; 
             }
         }
-        div:first-child {
-            max-width: 400px;
-        }
+        
+       
     }
 `;
 
