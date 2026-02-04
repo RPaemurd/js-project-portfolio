@@ -22,7 +22,7 @@ export const projects = [
         img: Findmytrail,
         title: "Find My Trail",
         tags: ["HTML", "CSS", "Javascript"],
-        netlifyUrl: "https://happy-thoughts-app-technigo.netlify.app/",
+        netlifyUrl: "https://findmytrail.netlify.app/",
         githubUrl: "https://github.com/RPaemurd/js-project-business-site" 
     },
      {
